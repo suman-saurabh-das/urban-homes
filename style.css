@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&family=Archivo:wght@300;400;500;600;700;800&family=Beau+Rivage&family=Bebas+Neue&display=swap');
+
+/*
+font-family: 'Amaranth', sans-serif;
+font-family: 'Archivo', sans-serif;
+font-family: 'Beau Rivage', cursive;
+font-family: 'Bebas Neue', cursive;
+*/
+
+/* SCROLL BAR STYLES */
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #ccc;
+    height: 1px;
+}
+::-webkit-scrollbar-thumb {
+    background: darkred;
+    border-radius: 100vw;
+    border: 2px solid #b3b3b3;
+}
+
+/* GLOBAL STYLES BEGIN */
+
+body {
+    font-family: 'Archivo', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.red-lg-btn {
+    background-color: darkred;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+
+.red-lg-btn:hover {
+    border: 1px solid darkred;
+    color: black;
+}
+
+.section__title,
+.section__desc {
+    color: white;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.section__title {
+    font-size: 4rem;
+}
+
+.section__desc {
+    font-size: 1.5rem;
+}
+
+.dark-red-icons{
+    color: darkred;
+    font-size: 3rem;
+    margin-top: -1rem;
+}
+
+.text-xsm{
+    font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+    .section__title {
+        font-size: 3rem;
+    }
+
+    .section__desc {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .section__title {
+        font-size: 2.25rem;
+    }
+    .section__desc {
+        font-size: 1rem;
+    }
+}
+
+/* GLOBAL STYLES END */
+
+/* NAVBAR STYLES BEGIN */
+
+#navigation-bar{
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+}
+
+.dark-red-font-color{
+    color: darkred;
+}
+
+.navbar-brand {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.navbar-brand:hover {
+    color: darkred;
+}
+
+.navbar-brand:visited {
+    color: darkred;
+}
+
+.nav-link {
+    color: black;
+    font-family: 'Amaranth', sans-serif;
+    margin: 0 0.75rem;
+}
+
+.nav-link:hover {
+    color: darkred;
+}
+
+/* NAVBAR STYLES END */
+
+/* LANDING SECTION STYLES BEGIN */
+
+#landing-section {
+    background-attachment: fixed;
+    background-image: url(images/landing-bg-dark.png);
+    background-size: cover;
+    /* Auto changing backgrounds */
+    /* background-image: url(https://source.unsplash.com/1920x1080/?homes,houses); */
+}
+
+.landing-section--top-margin {
+    padding-top: 25%;
+}
+
+.landing-section__form {
+    margin-bottom: 20%;
+    width: 50%;
+}
+
+.landing-section__btn:hover {
+    background: #000;
+    border: 1px solid black;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .landing-section__form {
+        width: 75%;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .landing-section--top-margin {
+        margin-top: 50%;
+    }
+
+    .landing-section__form {
+        width: 100%;
+    }
+}
+
+/* LANDING SECTION STYLES END */
+
+/* SERVICES SECTION STYLES BEGIN */
+
+.card{
+    position: static;
+}
+
+#services-section {
+    margin-bottom: 8%;
+}
+
+#services-section .section__title {
+    padding-top: 8%;
+    padding-bottom: 4%;
+
+}
+
+#services-section .section__desc {
+    margin-bottom: 4%;
+    width: 75%;
+}
+
+@media (max-width: 768px) {
+    .card{
+        margin-top: 1rem;
+    }
+}
+
+/* SERVICES SECTION STYLES END */
+
+/* LOAN SECTION STYLES BEGIN */
+
+#loan-section{
+    background-attachment: fixed;
+    background-image: url(images/loan.png);
+    background-size: cover;
+    background-position: 40%;
+}
+
+.loan-section__container{
+    width: 50%;
+}
+
+.loan-section--top-margin{
+    padding-top: 20%;
+}
+
+.loan-section__btn{
+    width: 25%;
+    margin-bottom: 15%;
+}
+.loan-section__btn:hover {
+    background: #000;
+    border: 1px solid black;
+    color: white;
+}
+
+@media (max-width: 425px){
+    .loan-section__container{
+        width: 100%;
+    }
+}
+
+/* LOAN SECTION STYLES END */
+
+/* INFO SECTION STYLES BEGIN */
+
+#info-section{
+    padding: 6% 0;
+}
+
+#info-section .section__title{
+    margin-bottom: 6%;
+}
+
+.info-section__title{
+    font-size: 1.25rem;
+}
+.info-section__desc{
+    font-size: 1rem;
+}
+/* INFO SECTION STYLES END */
+
+/* SELL SECTION BEGIN */
+
+.sell-section__image{
+    box-sizing: border-box;
+    object-fit: cover;
+    padding: 12%;
+    width: 100%;
+}
+
+.sell-section__text-container{
+    padding: 8% 4%;
+}
+
+.sell-section__btn:hover{
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 992px){
+    .sell-section__image{
+        padding: 12% 4% 0;
+    }
+}
+
+/* SELL SECTION END */
+
+/* CONTACT US SECTION BEGIN */
+
+#contact-us-section{
+    margin: 8% 0;
+}
+
+/* CONTACT US SECTION END */
+
+/* FOOTER SECTION BEGIN */
+
+.social-links{
+    color: black;
+    transition: all 0.3s ease-in;
+}
+.social-links:hover{
+    color: darkred;
+}
+.footer-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* FOOTER SECTION END */
